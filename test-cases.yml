@@ -51,6 +51,6 @@
   steps:
     - Нажать "Sign In"
     - Нажать "Sign in with Discord"
-    - Нажать "Authorize vtm9"
+    - Нажать "Авторизовать"
   expected-result: |
     Авторизация выполнена успешно
