@@ -6,7 +6,7 @@
   prerequisites: |
     - no data
   test-data: |
-    - Nickname: AnnaMoz91
+    - Nickname: AnnaMoz91Test
     - Email: mozulkoanna@yandex.ru
     - Password: Maa06011991
   steps:
@@ -22,12 +22,17 @@
 - summary: |
     Проверка успешной авторизации через Github
   requirement: |
-    Пользователь должен иметь возможность искать товары по категории
+    Пользователь должен иметь возможность авторизоваться на сайте через свой аккаунт на Github
   prerequisites: |
     - no data
   test-data: |
-    - no data
+    - Пользователь имеет аккаунт на Github со следующими регистрационными данными и авторизован в нём
+    - Nickname: AnnaMoz91Test
+    - Email: mozulkoanna@yandex.ru
+    - Password: Maa06011991
   steps:
-    - Выбрать любую категорию из списка, например - Fragrances
+    - Нажать "Sign In"
+    - Нажать "Sign in with Github"
+    - Нажать "Authorize vtm9"
   expected-result: |
-    Отображаются все товары согласно выбранной категории
+    Авторизация выполнена успешно
