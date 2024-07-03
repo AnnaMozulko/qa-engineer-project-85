@@ -36,3 +36,21 @@
     - Нажать "Authorize vtm9"
   expected-result: |
     Авторизация выполнена успешно
+
+- summary: |
+    Проверка успешной авторизации через Discord
+  requirement: |
+    Пользователь должен иметь возможность авторизоваться на сайте через свой аккаунт на Discord
+  prerequisites: |
+    - no data
+  test-data: |
+    - Пользователь имеет аккаунт на Discord со следующими регистрационными данными и авторизован в нём
+    - Nickname: AnnaMoz91Test
+    - Email: mozulkoanna@yandex.ru
+    - Password: Maa06011991
+  steps:
+    - Нажать "Sign In"
+    - Нажать "Sign in with Discord"
+    - Нажать "Authorize vtm9"
+  expected-result: |
+    Авторизация выполнена успешно
