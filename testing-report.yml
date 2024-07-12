@@ -25,7 +25,7 @@
 
 - summary: |
     Создание нового турнира
-  status: pass
+  status: fail
 
 - summary: |
     Редактирование настроек профиля
