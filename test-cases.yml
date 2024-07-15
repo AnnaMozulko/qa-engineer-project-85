@@ -1,100 +1,100 @@
- ---
- - summary: |
-     Проверка успешной регистрации на сайте
-requirement: |
-     Пользователь должен иметь возможность зарегистрироваться на сайте
-prerequisites: |
-     - no data
-test-data: |
-     - no data
-steps:
+---
+- summary: |
+    Проверка успешной регистрации на сайте
+  requirement: |
+    Пользователь должен иметь возможность зарегистрироваться на сайте
+  prerequisites: |
+    - no data
+  test-data: |
+    - no data
+  steps:
     - Нажать "Sign Up"
     - Заполнить поле "Nickname"
     - Заполнить поле "Email"
     - Заполнить поле "Password"
     - Заполнить поле "Password Confirmation"
     - Нажать "Submit"
-expected-result: |
+  expected-result: |
     Регистрация выполнена успешно
 
 - summary: |
     Проверка успешной авторизации через Github
-requirement: |
+  requirement: |
     Пользователь должен иметь возможность авторизоваться на сайте через свой аккаунт на Github
-prerequisites: |
+  prerequisites: |
     - Пользователь выполнил вход в свой аккаунт на Github
-test-data: |
+  test-data: |
     - Креды для входа в тестовый аккаунт на Github:
     - Nickname: AnnaMoz91Test
     - Email: mozulkoanna@yandex.ru
     - Password: Maa06011991
-steps:
+  steps:
     - Нажать "Sign In"
     - Нажать "Sign in with Github"
     - Нажать "Authorize vtm9"
-expected-result: |
+  expected-result: |
     Авторизация выполнена успешно
 
 - summary: |
     Проверка успешной авторизации через Discord
-requirement: |
+  requirement: |
     Пользователь должен иметь возможность авторизоваться на сайте через свой аккаунт на Discord
-prerequisites: |
+  prerequisites: |
     - Пользователь выполнил вход в свой аккаунт на Discord
-test-data: |
+  test-data: |
     - Креды для входа в тестовый аккаунт на Discord:
     - Nickname: AnnaMoz91Test
     - Email: mozulkoanna@yandex.ru
     - Password: Maa06011991
-steps:
+  steps:
     - Нажать "Sign In"
     - Нажать "Sign in with Discord"
     - Нажать "Авторизовать"
-expected-result: |
+  expected-result: |
     Авторизация выполнена успешно
 
 - summary: |
     Создание новой игры без регистрации на сайте
-requirement: |
+  requirement: |
     Пользователь должен иметь возможность сыграть в пробную игру без регистрации на сайте
-prerequisites: |
+  prerequisites: |
     - Пользователь не авторизован
-test-data: |
+  test-data: |
     - no data
-steps:
+  steps:
     - Нажать "Try simple battle"
-expected-result: |
+  expected-result: |
     Игра успешно создана без регистрации сайте
 
 - summary: |
     Создание игры с заданными параметрами
-requirement: |
+  requirement: |
     Пользователь должен иметь возможность создать новую игру с заданными параметрами
-prerequisites: |
+  prerequisites: |
     - no data
-test-data: |
+  test-data: |
     - no data
-steps:
+  steps:
     - Нажать "Create a game"
     - Выбрать любой уровень игры, например - 2 звезды
     - Выбрать тип игры "With a bot"
     - Установить любое контрольное время, например - 10 минут
     - Выбрать любую задачу по названию или по тэгу, например - оставить по умолчанию "random task", выбрать тэг - "math"
     - Нажать "Create battle"
-expected-result: |
+  expected-result: |
     Игра с заданными параметрами успешно создана
 
 - summary: |
     Создание новой игры с другом
-requirement: |
+  requirement: |
     Пользователь должен иметь возможность создать новую игру с другом
-prerequisites: |
+  prerequisites: |
     - no data
-test-data: |
+  test-data: |
     - Креды для входа в тестовый аккаунт друга:
     - Email: mozulkovittest@yandex.ru
     - Password: Maa06011990
-steps:
+  steps:
     - Нажать "Create a game"
     - Выбрать тип игры "With a friend"
     - Выбрать niсkname друга из списка возможных соперников
@@ -102,73 +102,74 @@ steps:
     - Зайти в аккаунт друга
     - Нажать на иконку с мечами
     - Нажать "Accept"
-expected-result: |
+  expected-result: |
     Игра с другом успешно создана
 
 - summary: |
     Создание нового турнира
-requirement: |
+  requirement: |
     Пользователь должен иметь возможность создания турниров
-prerequisites: |
+  prerequisites: |
     - Открыта страница https://codebattle.hexlet.io/tournaments
-test-data: |
+  test-data: |
     - no data
-steps:
+  steps:
     - Перейти к полям заголовка "Create a new tournament"
     - Ввести название турнира, например - "New test tournament1"
     - Установить будущие дату и время начала турнира
     - Ввести название первой команды, например - Команда №1
     - Ввести название второй команды, например - Команда №2
     - Нажать "Create"
-expected-result: |
+  expected-result: |
     Турнир успешно создан
 
 - summary: |
     Редактирование настроек профиля 
-requirement: |
+  requirement: |
     Пользователь должен иметь возможность редактировать своё имя и настройки профиля
-prerequisites: |
-test-data: |
+  prerequisites: |
+  test-data: |
     - no data
-steps:
+  steps:
     - Нажать на имя пользователя в правом верхнем углу страницы
     - Нажать на "Settings" из выпадающего списка
     - Удалить прежнее имя из поля "Your name"
     - Ввести новое имя в поле "Your name"
     - Изменить значение в поле "Your weapon" на любое из списка
     - Нажать "Save"
-expected-result: |
+  expected-result: |
     Изменения успешно сохранены
 
 - summary: |
     Отправка личного сообщения другому пользователю
-requirement: |
+  requirement: |
     Пользователь должен иметь возможность отправлять личные сообщения другим пользователям
-prerequisites: |
+  prerequisites: |
     - no data
-test-data: |
+  test-data: |
     - Креды для входа в тестовый аккаунт Пользователя №2:
     - Email: mozulkovittest@yandex.ru
     - Password: Maa06011990
-steps:
+  steps:
     - В аккаунте пользователя №1 нажать на nickname  пользователя №2 в списке онлайн-игроков
     - В выпадающем списке нажать на "Direct message"
     - В поле ввода сообщения ввести любой текст, например - "Привет!"
     - Нажать "Send"
     - Зайти в аккаунт пользователя №2 и убедиться,что сообщение доставлено
-expected-result: |
+  expected-result: |
     Личное сообщение другому пользователю отправлено
 
 - summary: |
     Проверка наличия мобильной версии сайта
-requirement: |
+  requirement: |
     Пользователь должен иметь возможность пользоваться сайтом с мобильного устройства
-prerequisites: |
-test-data: |
+  prerequisites: |
     - no data
-steps:
+  test-data: |
+    - no data
+  steps:
     - Открыть DevTools
     - Выбрать меню адаптивности
     - Выбрать любое мобильное устройство, например iPhone 14 Pro Max
-expected-result: |
+  expected-result: |
      Есть мобильная версия сайта
