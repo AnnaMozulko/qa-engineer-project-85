@@ -6,9 +6,7 @@
   prerequisites: |
     - no data
   test-data: |
-    - Nickname: AnnaM91Test
-    - Email: mozulkoannatest@yandex.ru
-    - Password: Maa06011991
+    - no data
   steps:
     - Нажать "Sign Up"
     - Заполнить поле "Nickname"
