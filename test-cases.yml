@@ -40,12 +40,12 @@
   requirement: |
     Пользователь должен иметь возможность авторизоваться на сайте через свой аккаунт на Discord
   prerequisites: |
-    - Пользователь авторизован в аккаунте на Discord со следующими  данными: 
+    - Пользователь выполнил вход в свой аккаунт на Discord
+  test-data: |
+    - Креды для входа в тестовый аккаунт на Discord:
     - Nickname: AnnaMoz91Test
     - Email: mozulkoanna@yandex.ru
     - Password: Maa06011991
-  test-data: |
-    - no data
   steps:
     - Нажать "Sign In"
     - Нажать "Sign in with Discord"
