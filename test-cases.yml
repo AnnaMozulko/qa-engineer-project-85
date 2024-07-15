@@ -73,9 +73,7 @@
   requirement: |
     Пользователь должен иметь возможность создать новую игру с ботом
   prerequisites: |
-    - Пользователь авторизован со следующими данными:
-    - Email: mozulkoannatest@yandex.ru
-    - Password: Maa06011991
+    - no data
   test-data: |
     - no data
   steps:
@@ -93,9 +91,6 @@
   requirement: |
     Пользователь должен иметь возможность создать новую игру с другом
   prerequisites: |
-    - Пользователь авторизован со следующими данными:
-    - Email: mozulkoannatest@yandex.ru
-    - Password: Maa06011991
     - Друг авторизован со следующими данными:
     - Email: mozulkovittest@yandex.ru
     - Password: Maa06011990
@@ -121,9 +116,6 @@
     Пользователь должен иметь возможность создания турниров
   prerequisites: |
     - Открыта страница https://codebattle.hexlet.io/tournaments
-    - Пользователь авторизован со следующими данными:
-    - Email: mozulkoannatest@yandex.ru
-    - Password: Maa06011991
   test-data: |
     - no data
   steps:
@@ -152,9 +144,6 @@
   requirement: |
     Пользователь должен иметь возможность редактировать своё имя и настройки профиля
   prerequisites: |
-    - Пользователь авторизован со следующими данными:
-    - Email: mozulkoannatest@yandex.ru
-    - Password: Maa06011991
   test-data: |
     - no data
   steps:
@@ -172,9 +161,6 @@
   requirement: |
     Пользователь должен иметь возможность отправлять личные сообщения другим пользователям
   prerequisites: |
-    - Пользователь №1 авторизован со следующими данными:
-    - Email: mozulkoannatest@yandex.ru
-    - Password: Maa06011991
     - Пользователь №2 авторизован со следующими данными:
     - Email: mozulkovittest@yandex.ru
     - Password: Maa06011990
@@ -194,9 +180,6 @@
   requirement: |
     Пользователь должен иметь возможность пользоваться сайтом с мобильного устройства
   prerequisites: |
-    - Пользователь авторизован со следующими данными:
-    - Email: mozulkoannatest@yandex.ru
-    - Password: Maa06011991
   test-data: |
     - no data
   steps:
